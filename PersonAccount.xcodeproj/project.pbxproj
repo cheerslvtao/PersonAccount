@@ -30,6 +30,7 @@
 		05A6639C1E54003500F51AFC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A6639B1E54003500F51AFC /* libsqlite3.tbd */; };
 		05A663A11E5406AA00F51AFC /* AccountDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6639F1E5406AA00F51AFC /* AccountDetailCell.swift */; };
 		05A663A21E5406AA00F51AFC /* AccountDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A663A01E5406AA00F51AFC /* AccountDetailCell.xib */; };
+		05BD7E9E1E67B278000A7579 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BD7E9D1E67B278000A7579 /* FMDBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		05A6639E1E54052B00F51AFC /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		05A6639F1E5406AA00F51AFC /* AccountDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailCell.swift; sourceTree = "<group>"; };
 		05A663A01E5406AA00F51AFC /* AccountDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountDetailCell.xib; sourceTree = "<group>"; };
+		05BD7E9C1E67B278000A7579 /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		05BD7E9D1E67B278000A7579 /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				059EA4431E52AA9300A9B355 /* LaunchScreen.storyboard */,
 				059EA4461E52AA9300A9B355 /* Info.plist */,
 				05A663871E54001500F51AFC /* fmdb */,
+				05BD7E9C1E67B278000A7579 /* FMDBManager.h */,
+				05BD7E9D1E67B278000A7579 /* FMDBManager.m */,
 			);
 			path = PersonAccount;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				059EA4591E52E83C00A9B355 /* AppStyleManager.swift in Sources */,
 				059C0A781E56F0BE009C4552 /* AddNewInfoViewCell.swift in Sources */,
 				05A663951E54001500F51AFC /* FMDatabaseAdditions.m in Sources */,
+				05BD7E9E1E67B278000A7579 /* FMDBManager.m in Sources */,
 				059EA44D1E52D15200A9B355 /* RootTabBarViewController.swift in Sources */,
 				059EA43B1E52AA9300A9B355 /* AppDelegate.swift in Sources */,
 				059EA4531E52D20D00A9B355 /* AddNewInfoViewController.swift in Sources */,

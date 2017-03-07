@@ -12,15 +12,23 @@ class CalculatorView: UIView {
     
     
     //属性观察器
+    //计算结果
     var result: Double = 0.0 {
-        willSet {
-            print(newValue)
-            
+        didSet {
+            let key: UnsafeRawPointer! = UnsafeRawPointer.init(bitPattern: "calculator".hashValue)
+            let topview = objc_getAssociatedObject(self, key) as! TopShowResultView
+            topview.moneyLabel.text = String.init(result)
         }
     }
     
-    
-    var resultString = "0"
+    //计算步骤
+    var resultString = "0" {
+        didSet {
+            let key: UnsafeRawPointer! = UnsafeRawPointer.init(bitPattern: "calculator".hashValue)
+            let topview = objc_getAssociatedObject(self, key) as! TopShowResultView
+            topview.operationProcess.text = resultString
+        }
+    }
     var isSum = true       //是否是 + 运算
     var isOpration = false //是否是运算状态
 
@@ -98,9 +106,19 @@ class CalculatorView: UIView {
                 self.resultString += value
             }
         case "-":
+            let lastCharater = self.resultString.substring(from: self.resultString.index(before: self.resultString.endIndex))
+            if  lastCharater == "-" {
+                break
+            }
             self.resultString += value
+            
         case "+":
+            let lastCharater = self.resultString.substring(from: self.resultString.index(before: self.resultString.endIndex))
+            if  lastCharater == "+" {
+                break
+            }
             self.resultString += value
+            
         case "←":
             if self.resultString.characters.count == 1 {
                 self.resultString = "0"
@@ -123,7 +141,6 @@ class CalculatorView: UIView {
         default: break
         }
         
-        print("---------"+self.resultString)
     }
 
     /// 获取需要运算的字符串的最后一个数字

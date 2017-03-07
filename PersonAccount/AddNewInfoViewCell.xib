@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="81" height="89"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_zhi_s" translatesAutoresizingMaskIntoConstraints="NO" id="rMY-Ii-41K">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_shou_s" translatesAutoresizingMaskIntoConstraints="NO" id="rMY-Ii-41K">
                         <rect key="frame" x="20" y="15" width="41" height="41"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="rMY-Ii-41K" secondAttribute="height" multiplier="1:1" id="ilM-k5-xR9"/>
@@ -44,10 +44,14 @@
                 <constraint firstAttribute="trailing" secondItem="rMY-Ii-41K" secondAttribute="trailing" constant="20" id="gzh-Wk-tkY"/>
             </constraints>
             <size key="customSize" width="81" height="89"/>
-            <point key="canvasLocation" x="-34.5" y="40.5"/>
+            <connections>
+                <outlet property="cellIcon" destination="rMY-Ii-41K" id="QIs-Q0-yhF"/>
+                <outlet property="cellTitle" destination="T6y-Ab-0DB" id="Why-na-xKb"/>
+            </connections>
+            <point key="canvasLocation" x="-235" y="-44"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="tabbar_zhi_s" width="24" height="24"/>
+        <image name="tabbar_shou_s" width="24" height="24"/>
     </resources>
 </document>

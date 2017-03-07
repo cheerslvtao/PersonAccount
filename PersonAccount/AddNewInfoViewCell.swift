@@ -10,6 +10,9 @@ import UIKit
 
 class AddNewInfoViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var cellTitle: UILabel!
+    @IBOutlet weak var cellIcon: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

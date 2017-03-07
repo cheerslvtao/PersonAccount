@@ -11,6 +11,6 @@
 
 /// 桥接文件
 
-#import "FMDB.h"
+#import "FMDBManager.h"
 
 #endif /* BridgingHeader_h */

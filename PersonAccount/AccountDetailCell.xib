@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCp-K4-gou">
@@ -33,7 +33,7 @@
                             <constraint firstAttribute="width" constant="1" id="aAT-Th-VEf"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工资" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cho-m2-k2K">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="外快" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cho-m2-k2K">
                         <rect key="frame" x="75" y="10" width="188" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="H9k-Cc-zzQ"/>
@@ -63,7 +63,7 @@
                         <color key="textColor" red="0.52514022439999997" green="0.52514022439999997" blue="0.52514022439999997" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天发工资了" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnW-pw-Ucd">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送外卖挣得钱-.-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnW-pw-Ucd">
                         <rect key="frame" x="71" y="26" width="193" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="NSr-gv-bKv"/>
@@ -98,7 +98,7 @@
                 <outlet property="income_type" destination="Cho-m2-k2K" id="CJm-4d-msA"/>
                 <outlet property="midView" destination="lCp-K4-gou" id="y3z-ew-33T"/>
             </connections>
-            <point key="canvasLocation" x="-568" y="-134"/>
+            <point key="canvasLocation" x="-244" y="-72"/>
         </tableViewCell>
     </objects>
 </document>
